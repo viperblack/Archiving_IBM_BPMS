@@ -6,4 +6,4 @@ We has many versions of the Process Applications and BO, for mapping individuall
 
 The NoSQL choosen is ElasticSearch (https://github.com/elastic/elasticsearch) in your version 5.2.2, because, your stack ELK, more specifically, because of Kibana (https://github.com/elastic/kibana) an tool for generate rich reports and dashboards easily.
 
-Builded an application in Python 2.7 for extract BO of BPMS Process Server and persist ElasticSearch (bpms_parser.py).
+Builded an application in Python 2.7 for extract BO of BPMS Process Server and persist ElasticSearch (bpms_parser.py) all hosted in CentOS7 distro.
