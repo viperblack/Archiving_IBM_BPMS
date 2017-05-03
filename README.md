@@ -1,4 +1,4 @@
-# Archiving IBM BPMS (v8.5.5)
+# Archiving IBM BPMS
 The version 8.5.5 of the IBM BPMS provides an API Rest that returns Business Objects (BO) and your values of Process Applications.
 In our case we needed extract BO values and record this datas in another databank for futures reports and actions of analytics.
 
