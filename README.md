@@ -20,4 +20,4 @@ Contributing: Larger projects often have sections on contributing to their proje
 Credits: Include a section for credits in order to highlight and link to the authors of your project.
 
 # License
-This project is licensed under a LGPLv3 license; read LICENSE file for more information.
+This project is licensed under a LGPLv3 license; read [LICENSE](https://github.com/viperblack/Archiving_IBM_BPMS/blob/master/LICENSE) file for more information.
