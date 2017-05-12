@@ -9,15 +9,25 @@ The NoSQL choosen is ElasticSearch (https://github.com/elastic/elasticsearch) in
 
 Builded an application in Python 2.7 for extract BO of BPMS Process Server and persist ElasticSearch (bpms_parser.py) all hosted in CentOS7 distro.
 
-Table of Contents: Optionally, include a table of contents in order to allow other people to quickly navigate especially long or detailed READMEs.
+# Architecture
++----------+               +------------+
+| IBM BPMS |---REST API ---| Python APP |  <- Extracting and parsing informations
++----------+               +------------+
+                                  |
+                                JSON
+                                  |
+                           +---------------+     +--------+
+          Persistence ->   | elasticsearch | ----| kibana |  <- Analytics
+                           +---------------+     +--------+
+# Usage
+1. Set in bpms_parser.conf you sets authenication roles.
+2. Set Protocol and URL for uses REST API of the IBM BPMS.
+3. Change range of instances for need persists in the elasticsearch.
 
-Installation: Installation is the next section in an effective README. Tell other users how to install your project locally. Optionally, include a gif to make the process even more clear for other people.
+Don't change other parameters without absolutely certain!
 
-Usage: The next section is usage, in which you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
-
-Contributing: Larger projects often have sections on contributing to their project, in which contribution instructions are outlined. Sometimes, this is a separate file. If you have specific contribution preferences, explain them so that other developers know how to best contribute to your work. To learn more about how to help others contribute, check out the guide for (setting guidelines for repository contributors)[https://help.github.com/articles/setting-guidelines-for-repository-contributors/].
-
-Credits: Include a section for credits in order to highlight and link to the authors of your project.
+# About me
+[Vimerson Pereira da Silva](https://www.linkedin.com/in/vimerson-silva-2b2bb338/?locale=en_US)
 
 # License
 This project is licensed under a LGPLv3 license; read [LICENSE](https://github.com/viperblack/Archiving_IBM_BPMS/blob/master/LICENSE) file for more information.
