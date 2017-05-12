@@ -10,15 +10,17 @@ The NoSQL choosen is ElasticSearch (https://github.com/elastic/elasticsearch) in
 Builded an application in Python 2.7 for extract BO of BPMS Process Server and persist ElasticSearch (bpms_parser.py) all hosted in CentOS7 distro.
 
 # Architecture
+```javascript
 +----------+               +------------+
 | IBM BPMS |---REST API ---| Python APP |  <- Extracting and parsing informations
 +----------+               +------------+
                                   |
                                 JSON
                                   |
-                           +---------------+     +--------+
-          Persistence ->   | elasticsearch | ----| kibana |  <- Analytics
-                           +---------------+     +--------+
+                          +---------------+    +--------+
+          Persistence ->  | elasticsearch |----| kibana |  <- Analytics
+                          +---------------+    +--------+
+````
 # Usage
 1. Set in bpms_parser.conf you sets authenication roles.
 2. Set Protocol and URL for uses REST API of the IBM BPMS.
